@@ -1,0 +1,39 @@
+# Website
+My first project
+<html>
+        <script type=text/javascript>
+            function validate() 
+            {
+                var username = document.getElementById("uname");
+                var password = document.getElementById("pass");
+                 if(username.value == "" || password.value == "")  
+                 {
+                    alert("No username and password input");
+                    return false;
+                    }  
+                    else if(username.value == password.value){
+                        alert("username and password are same");
+                        return false;
+                    }
+                                        
+                    else{
+                        return true;
+                         }        
+            }
+        </script>
+        <style>
+        </style>
+        
+
+        <body>
+        <form onsubmit="return validate()" action="im.html">
+            <input type="text" id="uname" placeholder="Username" required/>
+            <br><br>
+            <input type="password" id="pass" placeholder="Password" required/>
+            <br><br>
+            <button type="submit">Submit</button>
+        </form>
+        
+        
+        </body>
+
